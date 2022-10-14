@@ -1,10 +1,10 @@
-import { AppBar, Tab, Tabs, Toolbar, Typography } from "@mui/material";
+import { AppBar, Tab, Tabs } from "@mui/material";
+import Box from "@mui/material/Box";
 import React from "react";
 import logo from "../../Assets/Images/The Arch Interior.svg";
 import "../../CSS/DashboardComponent.css";
-import Box from "@mui/material/Box";
 
-const Header = () => {
+function Header() {
   const [value, setValue] = React.useState("one");
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -31,16 +31,16 @@ const Header = () => {
             // indicatorColor="secondary"
             aria-label="secondary tabs example"
           >
-            <Tab value="one" label="Item One" />
-            <Tab value="two" label="Item Two" />
-            <Tab value="three" label="Item Three" />
-            <Tab value="four" label="Item four" />
-            <Tab value="five" label="Item five" />
+            <Tab value="one" label="HOME" />
+            <Tab value="two" label="COLLECTION" />
+            
+            <Tab value="three" label="PROJECTS" />
+            <Tab value="four" label="ABOUT US" />
           </Tabs>
         </Box>
       </div>
     </AppBar>
   );
-};
+}
 
 export default Header;

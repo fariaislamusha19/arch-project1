@@ -41,13 +41,15 @@ const CardElement = () => {
           <div className="insidePaper">
             <FormatQuoteIcon sx={{ transform: "rotate(180deg)" }} />
           </div>
-          <div className="paperText"> adsadasdasdaa asasdsadsadsa dsdSDSDS</div>
+          <div className="paperText"> In ancient India, architects would also function as interior designers. This can be seen from the references of Vishwakarma the architect—one of the gods in Indian mythology. In these architects' design of 17th-century Indian homes, sculptures depicting ancient texts and events are seen inside the palaces, while during the medieval times wall art paintings were a common there are still around 2000 havelis in this continent.
+                         -Bill Gates
+          </div>
         </Paper>
         <Paper sx={{ backgroundColor: "#000", opacity: ".5" }}>
           <div className="insidePaper">
             <FormatQuoteIcon sx={{ transform: "rotate(180deg)" }} />
           </div>
-          <div className="paperText"> adsadasdasdaa asasdsadsadsa dsdSDSDS</div>
+          <div className="paperText"> Interior design is the art and science of understanding people's behavior to create functional spaces, that are aesthetically pleasing, within a building. Decoration is the furnishing or adorning of a space with decorative elements, sometimes complemented by advice and practical assistance. In short, interior designers may decorate, wher decorators does not design home.-Sheikh Hasina</div>
         </Paper>
       </Box>
     </div>
