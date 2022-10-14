@@ -36,8 +36,6 @@ export default function ImageCard({
 }) {
   debugger;
   const [expanded, setExpanded] = React.useState(false);
-  const [expanded1, setExpanded1] = React.useState(false);
-  const [expanded2, setExpanded2] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
