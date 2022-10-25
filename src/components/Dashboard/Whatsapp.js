@@ -1,4 +1,4 @@
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { FaWhatsapp } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
@@ -28,7 +28,7 @@ const Whatsapp = () => {
         aria-haspopup="true"
         tabIndex="0"
       >
-        <WhatsAppIcon className="Whatsapp-icon" />
+      <FaWhatsapp className='FaWhatsapp'/>
       </div>
 
       {/* <Modal show={show} onHide={handleClose} className='formbody'>

@@ -13,6 +13,16 @@
   color: white;
 }
 
+
+.navbar{
+  z-index:1!important;
+  
+}
+Button:hover {
+  text-decoration: underline !important;
+  
+}
+
 /* CardElement component */
 
 .insidePaper {

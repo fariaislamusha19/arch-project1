@@ -1,11 +1,13 @@
+
 .Mobile-icon {
   width: 40px;
   height: 40px;
 }
-.Whatsapp-icon {
-  width: 80px;
-  height: 80px;
-  margin: 12px;
+.FaWhatsapp {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .btn-click {
@@ -13,7 +15,7 @@
   font-size: 25px;
   position: fixed;
   right: 0;
-  top: 150px;
+  top: 200px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   border-left: 2px solid #fff;
@@ -32,21 +34,18 @@
   line-height: 1.5;
 }
 .btn-click1 {
-  background-color: black;
+  background-color: rgb(2, 97, 2);
   font-size: 25px;
   position: fixed;
-  right: 0;
-  top: 250px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-left: 2px solid #fff;
+  right: 5px;
+  top: 400px;
   color: #fff;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-radius: 50%;
+
   padding: 2;
-  width: 2.5rem;
+  width: 3.2rem;
   overflow: hidden;
-  height: 3.5rem;
+  height: 3.2rem;
 
   cursor: pointer;
   z-index: 1;
@@ -75,7 +74,7 @@
   display: inline-block;
   position: absolute;
   left: 4rem;
-  top: 1.5rem;
+  top: 1.2rem;
   width: 8rem;
   font-size: 1.5rem;
 }
@@ -179,13 +178,13 @@
 /*...............................Upfooter..........................*/
 
 .divcontent {
-  height: 600px;
+  height: 500px;
   width: 100%;
   text-align: center;
   background-color: black;
 }
 .card1 {
-  height: 550px;
+  height: 350px;
   width: 620px;
   float: left;
   margin-left: 60px;
@@ -195,14 +194,26 @@
 }
 
 .card2 {
-  height: 250px;
+  height: 300px;
   width: 620px;
   float: left;
-  margin-top: 0px;
+  margin-top: 50px;
   background-color: black;
 }
 .formbody {
   margin-top: 120px;
 }
 
-/*......................sisterlogos........................*/
+/*......................Bottomfooter........................*/
+.sisterconcerndiv{
+  height: 200px;
+  width: 100%;
+  background-color: black;
+ 
+}
+
+.concernlogo{
+  margin-top: 20px;
+
+  
+}

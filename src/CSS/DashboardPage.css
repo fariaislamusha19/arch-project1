@@ -2,8 +2,7 @@
   align-items: flex-start;
   flex-direction: row;
 }
-.Header {
-}
+
 
 .Quote {
   width: 100%;
@@ -23,7 +22,7 @@
 .card {
   text-align: center;
   margin: 30px 0px 30px 200px;
-  background: url(../Assets/Images/quote_image.jpg);
+  background-color: transparent;
 }
 
 .ImageCard-bg {

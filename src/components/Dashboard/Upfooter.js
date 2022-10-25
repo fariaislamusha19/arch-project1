@@ -7,16 +7,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
-import AAA from "../../Assets/Images/Areeb Ad Agency.svg";
-import ATC from "../../Assets/Images/Ayaan Trading Corporation.svg";
-import EE from "../../Assets/Images/Eagle Eye Security Agency.svg";
-import Ebazar from "../../Assets/Images/eBazar.svg";
-import EBB from "../../Assets/Images/eBook Bazar.svg";
-import FF from "../../Assets/Images/Fortune Fitness Pvt Ltd.svg";
-import FG from "../../Assets/Images/Fortune Group.svg";
-import HRP from "../../Assets/Images/HR Pool.svg";
-import LEM from "../../Assets/Images/Lamiya Event Management House.svg";
-import SQS from "../../Assets/Images/SQS Global Network.svg";
 import logo from "../../Assets/Images/The Arch Interior.svg";
 
 
@@ -36,7 +26,7 @@ const card = (
     
     <CardContent className='card1'>
       <Typography>
-      <iframe width={600} height={520} src="https://maps.google.com/maps?q=the%20arch%20interior,Road%20No.1,Dhanmondi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      <iframe width={600} height={420} src="https://maps.google.com/maps?q=the%20arch%20interior,Road%20No.1,Dhanmondi&t=&z=13&ie=UTF8&iwloc=&output=embed"
       frameborder="50" scrolling="yes" marginheight="50" marginwidth="0"></iframe>
       </Typography>
     </CardContent>
@@ -73,30 +63,14 @@ const card = (
         <br />
         Friday: Closed
       </Typography>
-      <Typography variant="h5" component="div" variant="body3"color="white">
+      <Typography variant="h5" component="div" color="white">
         
         <TwitterIcon/> <FacebookIcon/> <LinkedInIcon/> <InstagramIcon/>
         <br/>
         
       </Typography>
-       <br/>
-      <Typography variant="h5" component="div" color="white" >
-        Our Sister Concerns 
-        <br/>
-        <div >
-        <img src={EE} alt width={100} height={70}></img>
-        <img src={Ebazar} alt width={100} height={70}></img>
-        <img src={SQS} alt width={100} height={70}></img>
-        <img src={FF} alt width={100} height={70}></img>
-        <img src={LEM} alt width={100} height={70}></img>
-        <img src={FG} alt width={100} height={70}></img>
-        <img src={HRP} alt width={100} height={70}></img>
-        <img src={EBB} alt width={100} height={70}></img>
-        <img src={ATC} alt width={100} height={70}></img>
-        <img src={AAA} alt width={100} height={70}></img>
-      </div>
+    
       
-      </Typography>
       
     </CardContent>
     
@@ -108,8 +82,6 @@ const card = (
   
 
 )
-
-
 
 
 export default function OutlinedCard() {

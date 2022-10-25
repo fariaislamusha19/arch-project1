@@ -1,3 +1,4 @@
+
 .sliderbody {
   height: 700px;
   width: 100%;
@@ -22,4 +23,48 @@
   color: white;
   z-index: 1;
   opacity: 50.5;
+}
+
+
+/*..............................About...................*/
+
+
+.About {
+  height: 800px;
+  width: 100%;
+ 
+  background-color: rgb(15, 15, 15);
+}
+.carda {
+  height: 300px;
+  width: 50%;
+  float: left;
+  
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.cardb {
+  height: 300px;
+  width: 50%;
+  float: left;
+  background-color: white;
+}
+
+.cardc{
+  height: 430px;
+  width: 600px;
+  float: right;
+  margin-top: 30px;
+  background-color: gray;
+
+}
+.cardd{
+  height: 350px;
+  width: 700px;
+  float: left;
+  margin-top: 50px;
+  margin-left:10px;
+  background-color: gray;
+
 }
