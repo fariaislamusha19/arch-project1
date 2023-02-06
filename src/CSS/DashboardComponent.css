@@ -4,6 +4,7 @@
   text-align: center;
   padding-top: 10px;
   margin-top: 10px;
+ 
 }
 .logotext {
   text-align: center;
@@ -15,28 +16,33 @@
 
 
 .navbar{
-  z-index:1!important;
+  z-index:1000!important;
+  
   
 }
 Button:hover {
   text-decoration: underline !important;
   
 }
+/*....................imagecard...................*/
 
+.imageheader{
+  text-align: center;
+  font-family: Raleway ;
+}
+.imagecard{
+  text-align: justify;
+}
 /* CardElement component */
 
-.insidePaper {
-  height: 50px;
-  width: 60px;
-  background-color: #dc7e0c;
-  color: white;
-  text-align: center;
-  font-size: xx-large;
-  
+.cardelementback{
+  _height: 500px;
 }
 
-.paperText {
-  color: white;
-  font-size: larger;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.cardelement{
+  _height: 350px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
 }

@@ -11,7 +11,7 @@ import Home from './components/Dashboard/Home';
 import Aboutus from './components/Dashboard/Aboutus';
 import Contact from './components/Dashboard/Contact';
 import Projects from './components/Dashboard/Projects';
-import Collection from './components/Dashboard/Collection';
+import Services from './components/Dashboard/Services';
 import DrawerAppBar from './components/Dashboard/Header';
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
       <Route exact path="Aboutus" element={<Aboutus />} />
       <Route exact path="Contact" element={<Contact />} />
       <Route exact path="Projects" element={<Projects />} />
-      <Route exact path="Collection" element={<Collection />} />
+      <Route exact path="Services" element={<Services />} />
     </Routes>
     
      

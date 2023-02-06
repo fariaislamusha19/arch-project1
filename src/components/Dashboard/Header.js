@@ -1,5 +1,7 @@
 
 import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Grid from '@mui/material/Grid';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -19,7 +21,7 @@ import {Link} from 'react-router-dom';
 import "../../CSS/DashboardComponent.css";
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Aboutus','COLLECTION','PROJECTS' ,'Contact'];
+const navItems = ['Home', 'Aboutus','Services','Projects' ,'Contact'];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -32,7 +34,7 @@ function DrawerAppBar(props) {
   const drawer = (
    
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
-      <Typography variant="h5" sx={{ my: 2 }}>
+      <Typography variant="h5" sx={{ my: 2 , display: 'flex' }}>
       THE ARCH INTERIOR
       </Typography>
       <Divider />
@@ -40,7 +42,7 @@ function DrawerAppBar(props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-            <Link style={{textDecoration:"none"}} to='/item'>{item}</Link>
+            <Link style={{textDecoration:"none"}} to={item}>{item}</Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -54,9 +56,9 @@ function DrawerAppBar(props) {
   return (
     
     <Box sx={{ display: 'flex'}}>
-      <AppBar component="nav" className='navbar'  position="static" sx={{ background: "#000000" }} >
-      <div className="logo">
-        <img src={Logo} alt="" width={800} height={70}></img>
+      <AppBar component="nav" className='navbar' position="fixed" sx={{ background: 'rgba(0, 0, 0, 0.9)' }} >
+      <div className="logo" >
+        <img src={Logo} alt="" width="100%" height={70}></img>
       </div>
         <Toolbar>
           <IconButton 
@@ -77,7 +79,7 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button className='appbarbtn'  key={item} sx={{ color:'white', fontSize:20, 
-              fontFamily: 'monospace'}}>
+              fontFamily: 'Raleway'}}>
                 <Link style={{textDecoration:"none", color:"white"}} to={item}>{item}</Link>
                 
               </Button>

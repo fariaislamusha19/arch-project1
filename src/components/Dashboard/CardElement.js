@@ -1,59 +1,84 @@
-import { Box, Paper } from "@mui/material";
-import React from "react";
-import "../../CSS/DashboardComponent.css";
-import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+import * as React from 'react';
+import { experimentalStyled as styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardHeader from '@mui/material/CardHeader';
+import Avatar from '@mui/material/Avatar';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 
-// export const useStyles = makeStyles(() =>
-//   createStyles({
-//     rotateIcon: {
-//       animation: "$spin 2s linear infinite",
-//     },
-//     "@keyframes spin": {
-//       "0%": {
-//         transform: "rotate(360deg)",
-//       },
-//       "100%": {
-//         transform: "rotate(0deg)",
-//       },
-//     },
-//   })
-// );
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'light' ? '#ffffff' : 'white',
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  border:0,
+  color: theme.palette.text.secondary,
+}));
 
-const CardElement = () => {
-  // const classes = useStyles();
-
+export default function ResponsiveGrid() {
   return (
-    <div>
-      <Box
-        sx={{
-          backgroundColor: "transparent",
-          display: "flex",
-          flexWrap: "wrap",
-          "& > :not(style)": {
-            m: 1,
-            width: 400,
-            height: 400,
-          },
-        }}
-      >
-        <Paper sx={{ backgroundColor: "#000", opacity: ".5" }}>
-          <div className="insidePaper">
-            <FormatQuoteIcon sx={{ transform: "rotate(180deg)" }} />
-          </div>
-          <div className="paperText"> In ancient India, architects would also function as interior designers. This can be seen from the references of Vishwakarma the architect—one of the gods in Indian mythology. In these architects' design of 17th-century Indian homes, sculptures depicting ancient texts and events are seen inside the palaces, while during the medieval times wall art paintings were a common there are still around 2000 havelis in this continent.
-                         -Bill Gates
-          </div>
-        </Paper>
-        <Paper sx={{ backgroundColor: "#000", opacity: ".5" }}>
-          <div className="insidePaper">
-            <FormatQuoteIcon sx={{ transform: "rotate(180deg)" }} />
-          </div>
-          <div className="paperText"> Interior design is the art and science of understanding people's behavior to create functional spaces, that are aesthetically pleasing, within a building. Decoration is the furnishing or adorning of a space with decorative elements, sometimes complemented by advice and practical assistance. In short, interior designers may decorate, wher decorators does not design home.-Sheikh Hasina</div>
-        </Paper>
-      </Box>
-    </div>
+    <Box className='cardelementback' sx={{ flexGrow: 1 , borderRadius:0}} style= {{backgroundImage: "url('/images/backimg02.jpg')"}}>
+      <Grid container spacing={{ xs: 1, md: 1 }} columns={{ xs: 12, sm: 8, md: 12 }}>
+        
+          <Grid item xs={12} sm={6} md={6}>
+              
+              <Card className='cardelement' sx={{ backgroundColor: "#000", opacity: ".7"}}>
+                    <CardHeader
+        avatar={
+          <Avatar >
+            <AccountCircleIcon/>
+          </Avatar>
+        }
+      />
+              <CardContent sx={{ textAlign: 'center'}}>
+                  <Typography gutterBottom variant="h7" component="div" color="white" textAlign='justify'>
+                  Shelter is one of the main fundamental rights of each and every human being. 
+    Globalization has made our life easier to live and bring mankind closer to share their experiences.
+    Nowadays people have so many choices to choose the best among the best. It is also applicable in the
+      interior decoration sector. Keeping in mind The ARCH Interior is also flourishing with new to newer ideas 
+      be it for your sweet home, your bread & butter corporate office, your decision- & profit-making conference halls,
+      your favorite candle light or eating destinations, your special occasions or festival places. We try to adorn 
+      your dream with our passionate touch to suit your requirement.
+    Our unique team is always ready to accomplish your dream come true.
+                  </Typography>
+                 
+                </CardContent>
+              
+              </Card>
+          </Grid>
+        
+          <Grid item xs={12} sm={6} md={6}>
+          <Card className='cardelement' sx={{ backgroundColor: "#000", opacity: ".7"}}>
+          <CardHeader
+        avatar={
+          <Avatar >
+            <AccountCircleIcon/>
+          </Avatar>
+        }
+      />
+      <CardContent sx={{ textAlign: 'center'}}>
+         <Typography gutterBottom variant="h7" component="div" color="white" textAlign='justify'>
+         Shelter is one of the main fundamental rights of each and every human being. 
+    Globalization has made our life easier to live and bring mankind closer to share their experiences.
+    Nowadays people have so many choices to choose the best among the best. It is also applicable in the
+      interior decoration sector. Keeping in mind The ARCH Interior is also flourishing with new to newer ideas 
+      be it for your sweet home, your bread & butter corporate office, your decision- & profit-making conference halls,
+      your favorite candle light or eating destinations, your special occasions or festival places. We try to adorn 
+      your dream with our passionate touch to suit your requirement.
+    Our unique team is always ready to accomplish your dream come true.
+         </Typography>
+         
+       </CardContent>
+      
+     </Card>
+          </Grid>
+      
+      </Grid>
+    </Box>
   );
-};
-
-export default CardElement;
+}

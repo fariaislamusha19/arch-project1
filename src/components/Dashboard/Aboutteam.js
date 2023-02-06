@@ -1,78 +1,132 @@
-
 import * as React from 'react';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
-import IconButton from '@mui/material/IconButton';
+import { experimentalStyled as styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import CardActions from '@mui/material/CardActions';
+import Button from '@mui/material/Button';
+import logo from "../../Assets/Images/The Arch Interior.svg";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'light' ? '#ffffff' : 'white',
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  border:0,
+  color: theme.palette.text.secondary,
+}));
 
-export default function TitlebarImageList() {
+export default function ResponsiveGrid() {
   return (
-    <div className='gallerydiv'>
-    <ImageList className='gallerylist' >
-      <ImageListItem key="Subheader" cols={4}>
-        <ListSubheader component="div" className="gallerylistname">Gallery</ListSubheader>
-      </ImageListItem>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            className="imagelistsize"
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
-          />
-          <ImageListItemBar
-            title={item.title}
-            subtitle={item.author}
-            actionIcon={
-              <IconButton
-                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                aria-label={`info about ${item.title}`}
-              >
-              
-              </IconButton>
-            }
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-    </div>
+    <Box sx={{ flexGrow: 1 ,marginTop: '20px', marginBottom:'20px', marginRight:'20px', marginLeft:'20px', borderRadius:0}}>
+      <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 12, sm: 8, md: 12 }}>
+        
+          <Grid item xs={12} sm={3} md={3}>
+          <Card className='aboutcard' sx={{ maxWidth: 270 }}>
+      <CardMedia
+        class='aboutteamimg'
+        component="img"
+        src="images/pic22.png"
+        alt=" "
+      />
+     <CardContent sx={{ textAlign: 'center'}}>
+        <Typography gutterBottom variant="h5" component="div">
+          Name
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+         Designation
+        </Typography>
+      </CardContent>
+      <CardActions  >
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><FacebookIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><LinkedInIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><InstagramIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"> <TwitterIcon/></Button>
+      </CardActions>
+    </Card>
+
+          </Grid>
+          <Grid item xs={12} sm={3} md={3}>
+          <Card className='aboutcard' sx={{ maxWidth: 270 }}>
+      <CardMedia
+        class='aboutteamimg'
+        component="img"
+        src="images/md1.jpg"
+        alt=" "
+      />
+     <CardContent sx={{ textAlign: 'center'}}>
+        <Typography gutterBottom variant="h5" component="div">
+          Name
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        Designation
+        </Typography>
+      </CardContent>
+      <CardActions  >
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><FacebookIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><LinkedInIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><InstagramIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"> <TwitterIcon/></Button>
+      </CardActions>
+    </Card>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3}>
+          <Card className='aboutcard' sx={{ maxWidth: 270 }}>
+      <CardMedia
+        class='aboutteamimg'
+        component="img"
+        src="images/gm1.jpg"
+        alt=" "
+      />
+      <CardContent sx={{ textAlign: 'center'}}>
+        <Typography gutterBottom variant="h5" component="div">
+          Name
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        Designation
+        </Typography>
+      </CardContent>
+      <CardActions  >
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><FacebookIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><LinkedInIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><InstagramIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"> <TwitterIcon/></Button>
+      </CardActions>
+    </Card>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3}>
+          <Card className='aboutcard' sx={{ maxWidth: 270 }}>
+      <CardMedia
+        class='aboutteamimg'
+        component="img"
+        src="images/pic11.png"
+        alt=" "
+      />
+      <CardContent sx={{ textAlign: 'center'}}>
+        <Typography gutterBottom variant="h5" component="div">
+          Name
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        Designation
+        </Typography>
+      </CardContent>
+      <CardActions  >
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><FacebookIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><LinkedInIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"><InstagramIcon/></Button>
+        <Button className='aboutteambtn' variant="h5" component="div" color="white" size="small"> <TwitterIcon/></Button>
+      </CardActions>
+    </Card>
+          </Grid>
+      </Grid>
+    </Box>
   );
 }
-
-const itemData = [
-  {
-    img: 'images/imgwed.jpg',
-    title: 'wedding',
-    author: '@bkristastucchio',
-    rows: 2,
-    cols: 2,
-    featured: true,
-  },
- 
-  {
-    img: 'images/imgwed3.jpg',
-    title: 'wedding',
-    author: '@helloimnik',
-  },
- 
-  {
-    img: 'images/imghbd2.jpg',
-    title: 'birthday',
-    author: '@hjrc33',
-    cols: 2,
-  },
-  {
-    img: 'images/imgcorporate.jpg',
-    title: 'Conference',
-    author: '@arwinneil',
-    rows: 2,
-    cols: 2,
-    featured: true,
-  },
-
- 
-];
-

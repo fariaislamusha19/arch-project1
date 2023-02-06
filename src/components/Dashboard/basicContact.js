@@ -48,11 +48,10 @@ const BasicContact = () => {
                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Label>Telephone/Mobile Number</Form.Label>
                     <Form.Control
-                      type="Number"
+                      type="text"
                       autoFocus
                         placeholder="Enter phone number"
-                        value={value}
-                        onChange={setValue}/>
+                      />
                   </Form.Group>
 
                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
